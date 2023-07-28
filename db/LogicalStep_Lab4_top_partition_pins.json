@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sm_clk_enable",
+					"strict" : false
+				},
+				{
+					"name" : "blink_signal",
+					"strict" : false
+				},
+				{
+					"name" : "clkin_50",
+					"strict" : false
+				},
+				{
+					"name" : "pb_n[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pb_n[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pb_n[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pb_n[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
