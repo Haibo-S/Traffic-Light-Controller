@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Analysis & Synthesis report for LogicalStep_Lab4_top
 Fri Mar 31 14:15:27 2023
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
@@ -389,3 +390,396 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 52 warnings
     Info: Total CPU time (on all processors): 00:00:19
 
 
+=======
+Analysis & Synthesis report for LogicalStep_Lab4_top
+Fri Mar 31 14:15:27 2023
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Port Connectivity Checks: "clock_generator:INST2"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Mar 31 14:15:27 2023           ;
+; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
+; Revision Name                      ; LogicalStep_Lab4_top                            ;
+; Top-level Entity Name              ; LogicalStep_Lab4_top                            ;
+; Family                             ; MAX 10                                          ;
+; Total logic elements               ; 15                                              ;
+;     Total combinational functions  ; 15                                              ;
+;     Dedicated logic registers      ; 14                                              ;
+; Total registers                    ; 14                                              ;
+; Total pins                         ; 39                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
+; UFM blocks                         ; 0                                               ;
+; ADC blocks                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                            ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+; Option                                                                     ; Setting              ; Default Value        ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+; Device                                                                     ; 10M08SAE144C8G       ;                      ;
+; Top-level entity name                                                      ; LogicalStep_Lab4_top ; LogicalStep_Lab4_top ;
+; Family name                                                                ; MAX 10               ; Cyclone V            ;
+; Use smart compilation                                                      ; Off                  ; Off                  ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                   ; On                   ;
+; Enable compact report table                                                ; Off                  ; Off                  ;
+; Restructure Multiplexers                                                   ; Auto                 ; Auto                 ;
+; Create Debugging Nodes for IP Cores                                        ; Off                  ; Off                  ;
+; Preserve fewer node names                                                  ; On                   ; On                   ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                  ; Off                  ;
+; Verilog Version                                                            ; Verilog_2001         ; Verilog_2001         ;
+; VHDL Version                                                               ; VHDL_1993            ; VHDL_1993            ;
+; State Machine Processing                                                   ; Auto                 ; Auto                 ;
+; Safe State Machine                                                         ; Off                  ; Off                  ;
+; Extract Verilog State Machines                                             ; On                   ; On                   ;
+; Extract VHDL State Machines                                                ; On                   ; On                   ;
+; Ignore Verilog initial constructs                                          ; Off                  ; Off                  ;
+; Iteration limit for constant Verilog loops                                 ; 5000                 ; 5000                 ;
+; Iteration limit for non-constant Verilog loops                             ; 250                  ; 250                  ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                   ; On                   ;
+; Infer RAMs from Raw Logic                                                  ; On                   ; On                   ;
+; Parallel Synthesis                                                         ; On                   ; On                   ;
+; DSP Block Balancing                                                        ; Auto                 ; Auto                 ;
+; NOT Gate Push-Back                                                         ; On                   ; On                   ;
+; Power-Up Don't Care                                                        ; On                   ; On                   ;
+; Remove Redundant Logic Cells                                               ; Off                  ; Off                  ;
+; Remove Duplicate Registers                                                 ; On                   ; On                   ;
+; Ignore CARRY Buffers                                                       ; Off                  ; Off                  ;
+; Ignore CASCADE Buffers                                                     ; Off                  ; Off                  ;
+; Ignore GLOBAL Buffers                                                      ; Off                  ; Off                  ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                  ; Off                  ;
+; Ignore LCELL Buffers                                                       ; Off                  ; Off                  ;
+; Ignore SOFT Buffers                                                        ; On                   ; On                   ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                  ; Off                  ;
+; Optimization Technique                                                     ; Balanced             ; Balanced             ;
+; Carry Chain Length                                                         ; 70                   ; 70                   ;
+; Auto Carry Chains                                                          ; On                   ; On                   ;
+; Auto Open-Drain Pins                                                       ; On                   ; On                   ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                  ; Off                  ;
+; Auto ROM Replacement                                                       ; On                   ; On                   ;
+; Auto RAM Replacement                                                       ; On                   ; On                   ;
+; Auto DSP Block Replacement                                                 ; On                   ; On                   ;
+; Auto Shift Register Replacement                                            ; Auto                 ; Auto                 ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                 ; Auto                 ;
+; Auto Clock Enable Replacement                                              ; On                   ; On                   ;
+; Strict RAM Replacement                                                     ; Off                  ; Off                  ;
+; Allow Synchronous Control Signals                                          ; On                   ; On                   ;
+; Force Use of Synchronous Clear Signals                                     ; Off                  ; Off                  ;
+; Auto RAM Block Balancing                                                   ; On                   ; On                   ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                  ; Off                  ;
+; Auto Resource Sharing                                                      ; Off                  ; Off                  ;
+; Allow Any RAM Size For Recognition                                         ; Off                  ; Off                  ;
+; Allow Any ROM Size For Recognition                                         ; Off                  ; Off                  ;
+; Allow Any Shift Register Size For Recognition                              ; Off                  ; Off                  ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                   ; On                   ;
+; Ignore translate_off and synthesis_off directives                          ; Off                  ; Off                  ;
+; Timing-Driven Synthesis                                                    ; On                   ; On                   ;
+; Report Parameter Settings                                                  ; On                   ; On                   ;
+; Report Source Assignments                                                  ; On                   ; On                   ;
+; Report Connectivity Checks                                                 ; On                   ; On                   ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                  ; Off                  ;
+; Synchronization Register Chain Length                                      ; 2                    ; 2                    ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation   ; Normal compilation   ;
+; HDL message level                                                          ; Level2               ; Level2               ;
+; Suppress Register Optimization Related Messages                            ; Off                  ; Off                  ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                 ; 5000                 ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                 ; 5000                 ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                  ; 100                  ;
+; Clock MUX Protection                                                       ; On                   ; On                   ;
+; Auto Gated Clock Conversion                                                ; Off                  ; Off                  ;
+; Block Design Naming                                                        ; Auto                 ; Auto                 ;
+; SDC constraint protection                                                  ; Off                  ; Off                  ;
+; Synthesis Effort                                                           ; Auto                 ; Auto                 ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                   ; On                   ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                  ; Off                  ;
+; Analysis & Synthesis Message Level                                         ; Medium               ; Medium               ;
+; Disable Register Merging Across Hierarchies                                ; Auto                 ; Auto                 ;
+; Resource Aware Inference For Block RAM                                     ; On                   ; On                   ;
+; Synthesis Seed                                                             ; 1                    ; 1                    ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ; < 0.1%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                          ;
++----------------------------------+-----------------+-----------------------+------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path             ; Library ;
++----------------------------------+-----------------+-----------------------+------------------------------------------+---------+
+; LogicalStep_Lab4_top.vhd         ; yes             ; User VHDL File        ; N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd ;         ;
+; pb_inverters.vhd                 ; yes             ; Auto-Found VHDL File  ; N:/ECE 124/Lab4/pb_inverters.vhd         ;         ;
+; clock_generator.vhd              ; yes             ; Auto-Found VHDL File  ; N:/ECE 124/Lab4/clock_generator.vhd      ;         ;
+; synchronizer.vhd                 ; yes             ; Auto-Found VHDL File  ; N:/ECE 124/Lab4/synchronizer.vhd         ;         ;
+; holding_register.vhd             ; yes             ; Auto-Found VHDL File  ; N:/ECE 124/Lab4/holding_register.vhd     ;         ;
++----------------------------------+-----------------+-----------------------+------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 15             ;
+;                                             ;                ;
+; Total combinational functions               ; 15             ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 0              ;
+;     -- 3 input functions                    ; 2              ;
+;     -- <=2 input functions                  ; 13             ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 11             ;
+;     -- arithmetic mode                      ; 4              ;
+;                                             ;                ;
+; Total registers                             ; 14             ;
+;     -- Dedicated logic registers            ; 14             ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 39             ;
+;                                             ;                ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; clkin_50~input ;
+; Maximum fan-out                             ; 14             ;
+; Total fan-out                               ; 109            ;
+; Average fan-out                             ; 1.02           ;
++---------------------------------------------+----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                             ;
++-----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------+--------------+
+; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                          ; Library Name ;
++-----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------+--------------+
+; |LogicalStep_Lab4_top       ; 15 (0)            ; 14 (0)       ; 0           ; 0          ; 0            ; 0       ; 0         ; 39   ; 0            ; 0          ; |LogicalStep_Lab4_top                        ; work         ;
+;    |Clock_generator:INST2|  ; 9 (9)             ; 8 (8)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab4_top|Clock_generator:INST2  ; work         ;
+;    |holding_register:INST5| ; 1 (1)             ; 1 (1)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab4_top|holding_register:INST5 ; work         ;
+;    |holding_register:INST6| ; 1 (1)             ; 1 (1)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab4_top|holding_register:INST6 ; work         ;
+;    |synchronizer:INST3|     ; 2 (2)             ; 2 (2)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab4_top|synchronizer:INST3     ; work         ;
+;    |synchronizer:INST4|     ; 2 (2)             ; 2 (2)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LogicalStep_Lab4_top|synchronizer:INST4     ; work         ;
++-----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                     ;
++---------------------------------------------------+--------------------+
+; Register name                                     ; Reason for Removal ;
++---------------------------------------------------+--------------------+
+; Clock_generator:INST2|\clk_divider:counter[5..24] ; Lost fanout        ;
+; Total Number of Removed Registers = 20            ;                    ;
++---------------------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 14    ;
+; Number of registers using Synchronous Clear  ; 7     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "clock_generator:INST2" ;
++----------+-------+----------+---------------------+
+; Port     ; Type  ; Severity ; Details             ;
++----------+-------+----------+---------------------+
+; sim_mode ; Input ; Info     ; Stuck at VCC        ;
++----------+-------+----------+---------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 39                          ;
+; cycloneiii_ff         ; 14                          ;
+;     SCLR              ; 7                           ;
+;     plain             ; 7                           ;
+; cycloneiii_lcell_comb ; 16                          ;
+;     arith             ; 4                           ;
+;         2 data inputs ; 4                           ;
+;     normal            ; 12                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 2                           ;
+;                       ;                             ;
+; Max LUT depth         ; 1.40                        ;
+; Average LUT depth     ; 1.02                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+    Info: Processing started: Fri Mar 31 14:15:14 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LogicalStep_Lab4 -c LogicalStep_Lab4_top
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file logicalstep_lab4_top.vhd
+    Info (12022): Found design unit 1: LogicalStep_Lab4_top-SimpleCircuit File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 37
+    Info (12023): Found entity 1: LogicalStep_Lab4_top File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file ccp_state_machine.vhd
+    Info (12022): Found design unit 1: ccp_state_machine-SM File: N:/ECE 124/Lab4/ccp_state_machine.vhd Line: 19
+    Info (12023): Found entity 1: ccp_state_machine File: N:/ECE 124/Lab4/ccp_state_machine.vhd Line: 8
+Info (12127): Elaborating entity "LogicalStep_Lab4_top" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at LogicalStep_Lab4_top.vhd(31): used implicit default value for signal "seg7_data" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 31
+Warning (10541): VHDL Signal Declaration warning at LogicalStep_Lab4_top.vhd(32): used implicit default value for signal "seg7_char1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 32
+Warning (10541): VHDL Signal Declaration warning at LogicalStep_Lab4_top.vhd(33): used implicit default value for signal "seg7_char2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 33
+Warning (10541): VHDL Signal Declaration warning at LogicalStep_Lab4_top.vhd(104): used implicit default value for signal "NS_A" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 104
+Warning (10541): VHDL Signal Declaration warning at LogicalStep_Lab4_top.vhd(104): used implicit default value for signal "NS_G" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 104
+Warning (10541): VHDL Signal Declaration warning at LogicalStep_Lab4_top.vhd(104): used implicit default value for signal "NS_D" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 104
+Warning (10541): VHDL Signal Declaration warning at LogicalStep_Lab4_top.vhd(104): used implicit default value for signal "EW_A" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 104
+Warning (10541): VHDL Signal Declaration warning at LogicalStep_Lab4_top.vhd(104): used implicit default value for signal "EW_G" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 104
+Warning (10541): VHDL Signal Declaration warning at LogicalStep_Lab4_top.vhd(104): used implicit default value for signal "EW_D" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 104
+Warning (10541): VHDL Signal Declaration warning at LogicalStep_Lab4_top.vhd(105): used implicit default value for signal "NS_cross" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 105
+Warning (10541): VHDL Signal Declaration warning at LogicalStep_Lab4_top.vhd(105): used implicit default value for signal "EW_cross" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 105
+Warning (10541): VHDL Signal Declaration warning at LogicalStep_Lab4_top.vhd(106): used implicit default value for signal "display" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 106
+Warning (10036): Verilog HDL or VHDL warning at LogicalStep_Lab4_top.vhd(108): object "seven_seg_NS" assigned a value but never read File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 108
+Warning (10036): Verilog HDL or VHDL warning at LogicalStep_Lab4_top.vhd(109): object "seven_seg_EW" assigned a value but never read File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 109
+Warning (12125): Using design file pb_inverters.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: PB_inverters-ckt File: N:/ECE 124/Lab4/pb_inverters.vhd Line: 14
+    Info (12023): Found entity 1: PB_inverters File: N:/ECE 124/Lab4/pb_inverters.vhd Line: 8
+Info (12128): Elaborating entity "pb_inverters" for hierarchy "pb_inverters:INST1" File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 135
+Warning (12125): Using design file clock_generator.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Clock_generator-rtl File: N:/ECE 124/Lab4/clock_generator.vhd Line: 26
+    Info (12023): Found entity 1: Clock_generator File: N:/ECE 124/Lab4/clock_generator.vhd Line: 13
+Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:INST2" File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 136
+Warning (12125): Using design file synchronizer.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: synchronizer-circuit File: N:/ECE 124/Lab4/synchronizer.vhd Line: 18
+    Info (12023): Found entity 1: synchronizer File: N:/ECE 124/Lab4/synchronizer.vhd Line: 8
+Info (12128): Elaborating entity "synchronizer" for hierarchy "synchronizer:INST3" File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 137
+Warning (10492): VHDL Process Statement warning at synchronizer.vhd(34): signal "sreg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: N:/ECE 124/Lab4/synchronizer.vhd Line: 34
+Warning (12125): Using design file holding_register.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: holding_register-circuit File: N:/ECE 124/Lab4/holding_register.vhd Line: 18
+    Info (12023): Found entity 1: holding_register File: N:/ECE 124/Lab4/holding_register.vhd Line: 8
+Info (12128): Elaborating entity "holding_register" for hierarchy "holding_register:INST5" File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 139
+Warning (10492): VHDL Process Statement warning at holding_register.vhd(34): signal "sreg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: N:/ECE 124/Lab4/holding_register.vhd Line: 34
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "leds[0]" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 15
+    Warning (13410): Pin "leds[2]" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 15
+    Warning (13410): Pin "leds[4]" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 15
+    Warning (13410): Pin "leds[5]" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 15
+    Warning (13410): Pin "leds[6]" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 15
+    Warning (13410): Pin "leds[7]" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 15
+    Warning (13410): Pin "seg_NS_a" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 20
+    Warning (13410): Pin "seg_NS_d" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 21
+    Warning (13410): Pin "seg_NS_g" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 22
+    Warning (13410): Pin "seg_EW_a" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 24
+    Warning (13410): Pin "seg_EW_d" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 25
+    Warning (13410): Pin "seg_EW_g" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 26
+    Warning (13410): Pin "seg7_data[0]" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 31
+    Warning (13410): Pin "seg7_data[1]" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 31
+    Warning (13410): Pin "seg7_data[2]" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 31
+    Warning (13410): Pin "seg7_data[3]" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 31
+    Warning (13410): Pin "seg7_data[4]" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 31
+    Warning (13410): Pin "seg7_data[5]" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 31
+    Warning (13410): Pin "seg7_data[6]" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 31
+    Warning (13410): Pin "seg7_char1" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 32
+    Warning (13410): Pin "seg7_char2" is stuck at GND File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 33
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 20 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 9 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "rst_n" File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 12
+    Warning (15610): No output dependent on input pin "sw[0]" File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 14
+    Warning (15610): No output dependent on input pin "sw[1]" File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 14
+    Warning (15610): No output dependent on input pin "sw[2]" File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 14
+    Warning (15610): No output dependent on input pin "sw[3]" File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 14
+    Warning (15610): No output dependent on input pin "sw[4]" File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 14
+    Warning (15610): No output dependent on input pin "sw[5]" File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 14
+    Warning (15610): No output dependent on input pin "sw[6]" File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 14
+    Warning (15610): No output dependent on input pin "sw[7]" File: N:/ECE 124/Lab4/LogicalStep_Lab4_top.vhd Line: 14
+Info (21057): Implemented 54 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 25 output pins
+    Info (21061): Implemented 15 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 52 warnings
+    Info: Peak virtual memory: 4966 megabytes
+    Info: Processing ended: Fri Mar 31 14:15:27 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:19
+
+
+>>>>>>> f152ec88ed0e01c9b6e0f2c1f89c86f3dee37448

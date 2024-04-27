@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <sld_project_info>
   <project>
     <hash md5_digest_80b="8dff81059d497bbf9dc1"/>
@@ -6,3 +7,13 @@
     <file device="10M08SAE144C8G" path="LogicalStep_Lab4_top.sof" usercode="0xFFFFFFFF"/>
   </file_info>
 </sld_project_info>
+=======
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="8dff81059d497bbf9dc1"/>
+  </project>
+  <file_info>
+    <file device="10M08SAE144C8G" path="LogicalStep_Lab4_top.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+</sld_project_info>
+>>>>>>> f152ec88ed0e01c9b6e0f2c1f89c86f3dee37448

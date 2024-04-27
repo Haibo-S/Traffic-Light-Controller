@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -20,4 +21,28 @@ BEGIN
 
 
 
+=======
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity synchronizer is port (
+
+			clk					: in std_logic;
+			reset					: in std_logic;
+			din					: in std_logic;
+			dout					: out std_logic
+  );
+ end synchronizer;
+ 
+ 
+architecture circuit of synchronizer is
+
+	Signal sreg				: std_logic_vector(1 downto 0);
+
+BEGIN
+
+
+
+>>>>>>> f152ec88ed0e01c9b6e0f2c1f89c86f3dee37448
 end;

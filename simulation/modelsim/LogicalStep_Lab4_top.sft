@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 set tool_name "ModelSim-Altera (VHDL)"
+=======
+set tool_name "ModelSim-Altera (VHDL)"
+>>>>>>> f152ec88ed0e01c9b6e0f2c1f89c86f3dee37448
