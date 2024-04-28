@@ -1,4 +1,4 @@
-# Traffic Light Controller
+## Traffic Light Controller
 
 This project simulates a Traffic Light Controller (TLC) using VHDL, implementing sequential logic and state machines. The traffic light controller sequence and behavior are based on both Moore and Mealy state machines, with functionalities supporting pedestrian crossing requests.
 
